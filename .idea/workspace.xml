@@ -1,26 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec2e2c76-3077-46e0-aab8-312cbf079706" name="Default Changelist" comment="init commit.&#10;Authentication scaffold installed and completed.">
-      <change beforePath="$PROJECT_DIR$/.idea/OAuth2_Laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OAuth2_Laravel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+    <list default="true" id="ec2e2c76-3077-46e0-aab8-312cbf079706" name="Default Changelist" comment="Install passport and configure it.">
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +181,7 @@
       <updated>1607450137714</updated>
       <workItem from="1607450138801" duration="3476000" />
       <workItem from="1607503609188" duration="2146000" />
-      <workItem from="1607510564651" duration="3140000" />
+      <workItem from="1607510564651" duration="3573000" />
     </task>
     <task id="LOCAL‎۰۰۰۰۱" summary="init commit.&#10;Authentication scaffold installed and completed.">
       <created>1607452909872</created>
@@ -203,7 +189,19 @@
       <option name="presentableId" value="LOCAL‎۰۰۰۰۱" />
       <updated>1607452909872</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL‎۰۰۰۰۲" summary="Install passport and configure it.">
+      <created>1607526262346</created>
+      <option name="number" value="LOCAL‎۰۰۰۰۲" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۰۲" />
+      <updated>1607526262346</updated>
+    </task>
+    <task id="LOCAL‎۰۰۰۰۳" summary="Install passport and configure it.">
+      <created>1607526302571</created>
+      <option name="number" value="LOCAL‎۰۰۰۰۳" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۰۳" />
+      <updated>1607526302571</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +210,23 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -223,20 +238,30 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit.&#10;Authentication scaffold installed and completed." />
-    <option name="LAST_COMMIT_MESSAGE" value="init commit.&#10;Authentication scaffold installed and completed." />
+    <MESSAGE value="Add Authentication api routes." />
+    <MESSAGE value="Install passport and configure it." />
+    <option name="LAST_COMMIT_MESSAGE" value="Install passport and configure it." />
   </component>
   <component name="WindowStateProjectService">
     <state x="444" y="185" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607504299451">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="444" y="185" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1607504299451" />
-    <state x="498" y="86" key="RollbackChangesDialog" timestamp="1607452754163">
+    <state x="357" y="87" key="RollbackChangesDialog" timestamp="1607526402123">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="498" y="86" key="RollbackChangesDialog/0.0.1366.768@0.0.1366.768" timestamp="1607452754163" />
+    <state x="357" y="87" key="RollbackChangesDialog/0.0.1366.768@0.0.1366.768" timestamp="1607526402123" />
     <state x="184" y="28" key="SettingsEditor" timestamp="1607453944433">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="28" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1607453944433" />
+    <state x="496" y="282" key="git4idea.ui.GitStashDialog" timestamp="1607526419490">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="496" y="282" key="git4idea.ui.GitStashDialog/0.0.1366.768@0.0.1366.768" timestamp="1607526419490" />
+    <state x="443" y="173" key="git4idea.ui.GitUnstashDialog" timestamp="1607526428433">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="443" y="173" key="git4idea.ui.GitUnstashDialog/0.0.1366.768@0.0.1366.768" timestamp="1607526428433" />
   </component>
 </project>
