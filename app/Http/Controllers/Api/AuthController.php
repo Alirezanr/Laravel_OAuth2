@@ -11,19 +11,18 @@ class AuthController extends Controller
 {
     function login(Request $request)
     {
-        $request->validate(['email'    => 'required|string|email',
-                            'password' => 'required|string']);
+        $request->validate(['email' => 'required|string|email',
+            'password' => 'required|string']);
 
-        $credential = request(['email','password']);
-        if (!Auth::attempt($credential))
-        {
+        $credential = request(['email', 'password']);
+        if (!Auth::attempt($credential)) {
             return response()->json(['message' => 'Invalid email or password.'], 401);
         }
-        $user=$request->user();
+        $user = $request->user();
 
-        $token=$user->createToken('Access Token');
+        $token = $user->createToken('Access Token');
 
-        $user->access_token=$token->accessToken;
+        $user->access_token = $token->accessToken;
 
         return response()->json(['user' => $user], 200);
 
@@ -31,23 +30,32 @@ class AuthController extends Controller
 
     function signup(Request $request)
     {
-        $request->validate(['name'     => 'required|string',
-                            'email'    => 'required|string|email|unique:users',
-                            //confirmed:we need to pass tow passwords and both should match
-                            'password' => 'required|string|confirmed']);
+        $request->validate(['name' => 'required|string',
+            'email' => 'required|string|email|unique:users',
+            'password' => 'required|string|confirmed']);
 
 
-        $user = new User(['name'     => $request->name,
-                          'email'    => $request->email,
-                          'password' => bcrypt($request->password)]);
+        $user = new User(['name' => $request->name,
+            'email' => $request->email,
+            'password' => bcrypt($request->password)]);
 
         $user->save();
+        $token = $user->createToken('Access Token');
+        $user->access_token = $token->accessToken;
 
-        return response()->json(['message' => 'user registered successfully.'], 201);
+        return response()->json(['message' => 'User registered successfully.',
+            'user' => $user],
+            201);
     }
 
-    function hello()
+    function logout(Request $request)
     {
-        return "Hello from AuthController";
+        $request->user()->token()->revoke();
+        return response()->json(['message' => 'User logged out successfully.'], 200);
+    }
+
+    function index(Request $request)
+    {
+        return response()->json(["user" => $request->user()], 200);
     }
 }

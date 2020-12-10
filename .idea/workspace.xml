@@ -5,9 +5,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec2e2c76-3077-46e0-aab8-312cbf079706" name="Default Changelist" comment="Create AuthController.php .&#10;Add Authentication api routes.">
+    <list default="true" id="ec2e2c76-3077-46e0-aab8-312cbf079706" name="Default Changelist" comment="finish user login,signup and logout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AuthController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +30,11 @@
         <option name="argument" value="--tags" />
         <option name="title" value="All" />
       </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -156,6 +160,20 @@
       <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
       <path value="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge" />
       <path value="$PROJECT_DIR$/vendor/nyholm/psr7" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/arrilot/laravel-widgets" />
+      <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/vendor/larapack/doctrine-support" />
+      <path value="$PROJECT_DIR$/vendor/larapack/hooks" />
+      <path value="$PROJECT_DIR$/vendor/larapack/voyager-hooks" />
+      <path value="$PROJECT_DIR$/vendor/tcg/voyager" />
     </include_path>
   </component>
   <component name="ProjectId" id="1lNv0BkW2wr7bUqfTYZ2nu77AFP" />
@@ -189,6 +207,13 @@
       <workItem from="1607450138801" duration="3476000" />
       <workItem from="1607503609188" duration="2146000" />
       <workItem from="1607510564651" duration="8975000" />
+      <workItem from="1607598030088" duration="19000" />
+      <workItem from="1607611109360" duration="1498000" />
+      <workItem from="1610719867538" duration="7111000" />
+      <workItem from="1610812878714" duration="52000" />
+      <workItem from="1612900712267" duration="918000" />
+      <workItem from="1613719885664" duration="1302000" />
+      <workItem from="1613769269062" duration="490000" />
     </task>
     <task id="LOCAL‎۰۰۰۰۱" summary="init commit.&#10;Authentication scaffold installed and completed.">
       <created>1607452909872</created>
@@ -214,7 +239,13 @@
       <option name="presentableId" value="LOCAL‎۰۰۰۰۴" />
       <updated>1607526521811</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL‎۰۰۰۰۵" summary="finish user login,signup and logout">
+      <created>1613769555588</created>
+      <option name="number" value="LOCAL‎۰۰۰۰۵" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۰۵" />
+      <updated>1613769555588</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,21 +285,26 @@
     <MESSAGE value="Add Authentication api routes." />
     <MESSAGE value="Install passport and configure it." />
     <MESSAGE value="Create AuthController.php .&#10;Add Authentication api routes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Create AuthController.php .&#10;Add Authentication api routes." />
+    <MESSAGE value="finish user login,signup and logout" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish user login,signup and logout" />
   </component>
   <component name="WindowStateProjectService">
     <state x="444" y="185" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607504299451">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="444" y="185" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1607504299451" />
+    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1610812929675">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1610812929675" />
     <state x="357" y="87" key="RollbackChangesDialog" timestamp="1607526402123">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="357" y="87" key="RollbackChangesDialog/0.0.1366.768@0.0.1366.768" timestamp="1607526402123" />
-    <state x="-6" y="28" width="1188" height="711" key="SettingsEditor" timestamp="1607528393823">
+    <state x="50" y="51" width="1188" height="711" key="SettingsEditor" timestamp="1613721194165">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="-6" y="28" width="1188" height="711" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1607528393823" />
+    <state x="50" y="51" width="1188" height="711" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1613721194165" />
     <state x="275" y="116" key="Vcs.Push.Dialog.v2" timestamp="1607531872591">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -281,5 +317,9 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="443" y="173" key="git4idea.ui.GitUnstashDialog/0.0.1366.768@0.0.1366.768" timestamp="1607526428433" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1613769280169">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1613769280169" />
   </component>
 </project>

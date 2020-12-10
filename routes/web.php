@@ -13,23 +13,7 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Auth::routes();
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
 
-
-/*
-    C:\xampp\htdocs\OAuth2_Laravel>php artisan passport:install
-        Encryption keys generated successfully.
-        Personal access client created successfully.
-        Client ID: 1
-        Client secret: 10kOnmqgu8GdRAHqzcVio5VY5abQuBKDKaJMJhta
-        Password grant client created successfully.
-        Client ID: 2
-        Client secret: Iuq7JCaO7BpoPltWzBnR3nqkreqMfkJr8KNkbO6Q
-
- */
